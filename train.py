@@ -11,8 +11,8 @@ from sklearn.datasets import load_iris
 def train():
     # Load directory paths for persisting model
 
-    MODEL_DIR = os.environ["MODEL_DIR"]
-    MODEL_FILE = os.environ["MODEL_FILE"]
+    MODEL_DIR = "/home/my-model/"
+    MODEL_FILE = "model"
     MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
 
     # Load and split the data
