@@ -2,7 +2,13 @@ from  flask import Flask
 from joblib import load
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
+import os
 # Creation of the Flask app
+
+# Set environnment variables
+MODEL_DIR = os.environ["MODEL_DIR"]
+MODEL_FILE = os.environ["MODEL_FILE"]
+MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
 app = Flask(__name__)
 
 # API 
