@@ -1,6 +1,6 @@
 FROM jupyter/scipy-notebook
 
-RUN mkdir my-model
+RUN mkdir /home/my-model
 ENV MODEL_DIR=/home/my-model
 ENV MODEL_FILE=svc_model.model
 
