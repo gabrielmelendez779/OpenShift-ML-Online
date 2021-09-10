@@ -14,4 +14,4 @@ COPY api.py ./api.py
 EXPOSE 8080
 
 RUN python3 train.py
-CMD ["python3", "api.py", "8080"]
+CMD ["python3", "app.py", "8080"]
