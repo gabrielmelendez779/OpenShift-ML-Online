@@ -1,7 +1,7 @@
 FROM jupyter/scipy-notebook
 
 RUN mkdir my-model
-ENV MODEL_DIR=/home/jovyan/my-model
+ENV MODEL_DIR=/home/my-model
 ENV MODEL_FILE=svc_model.model
 
 COPY requirements.txt ./requirements.txt
