@@ -1,7 +1,8 @@
 FROM jupyter/scipy-notebook
 
-RUN mkdir /home/my-model
-ENV MODEL_DIR=/home/my-model
+RUN mkdir ./home
+RUN mkdir ./home/my-model
+ENV MODEL_DIR= ./home/my-model
 ENV MODEL_FILE=svc_model.model
 
 COPY requirements.txt ./requirements.txt
