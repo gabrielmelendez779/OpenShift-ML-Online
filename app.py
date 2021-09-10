@@ -1,10 +1,6 @@
 from  flask import Flask 
-import os
-from sklearn import svm
-from joblib import dump, load
-from sklearn.model_selection import train_test_split
+
 from sklearn.datasets import load_iris
-from joblib import load
 # Creation of the Flask app
 app = Flask(__name__)
 
