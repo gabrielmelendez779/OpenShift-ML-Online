@@ -8,7 +8,7 @@ import os
 # Set environnment variables
 MODEL_DIR = "/home/my-model/"
 MODEL_FILE = "model"
-MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
+MODEL_PATH = MODEL_DIR + MODEL_FILE
 app = Flask(__name__)
 
 # API 
