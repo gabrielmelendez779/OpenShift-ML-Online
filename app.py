@@ -6,7 +6,7 @@ import os
 # Creation of the Flask app
 
 # Set environnment variables
-MODEL_DIR = "/home/my-model/"
+MODEL_DIR = "./home/my-model/"
 MODEL_FILE = "clf"
 MODEL_PATH = MODEL_DIR + MODEL_FILE
 app = Flask(__name__)
