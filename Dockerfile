@@ -9,7 +9,7 @@ COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 
 COPY train.py ./train.py
-COPY api.py ./api.py
+#COPY api.py ./api.py
 COPY app.py ./app.py
 
 #USER 1001
