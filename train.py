@@ -12,7 +12,7 @@ def train():
     # Load directory paths for persisting model
 
     MODEL_DIR = "/home/my-model/"
-    MODEL_FILE = "model"
+    MODEL_FILE = "clf"
     MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
 
     # Load and split the data
