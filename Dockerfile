@@ -2,9 +2,8 @@ FROM jupyter/scipy-notebook
 
 
 RUN mkdir /home/my-model/
-ENV MODEL_DIR= /home/my-model/
-ENV MODEL_FILE=svc_model.model
-workdir ./home
+
+workdir /home/my-model/
 
 COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
@@ -17,3 +16,4 @@ EXPOSE 8080
 
 RUN python3 train.py
 CMD ["python3", "app.py", "8080"]
+
