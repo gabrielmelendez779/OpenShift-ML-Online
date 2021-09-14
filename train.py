@@ -12,8 +12,8 @@ def train():
     # Load directory paths for persisting model
 
     MODEL_DIR = os.getcwd()
-    MODEL_FILE = "\model"
-    MODEL_PATH = os.path.join(MODEL_DIR, MODEL_FILE)
+    MODEL_FILE = "/model"
+    MODEL_PATH = MODEL_DIR+MODEL_FILE
 
     # Load and split the data
     iris = load_iris()
