@@ -7,7 +7,7 @@ import os
 
 # Set environnment variables
 MODEL_DIR = os.getcwd()
-MODEL_FILE = "\model"
+MODEL_FILE = "/model"
 MODEL_PATH = MODEL_DIR + MODEL_FILE
 app = Flask(__name__)
 
