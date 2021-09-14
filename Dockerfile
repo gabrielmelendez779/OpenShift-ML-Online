@@ -1,9 +1,9 @@
 FROM jupyter/scipy-notebook
 
 
-RUN mkdir /home/my-model/
 
-WORKDIR /home/my-model/
+
+WORKDIR /app
 
 COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
