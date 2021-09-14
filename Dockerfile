@@ -3,7 +3,7 @@ FROM jupyter/scipy-notebook
 
 RUN mkdir /home/my-model/
 
-workdir /home/my-model/
+WORKDIR /home/my-model/
 
 COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
